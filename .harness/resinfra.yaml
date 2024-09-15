@@ -1,0 +1,13 @@
+infrastructureDefinition:
+  name: resinfra
+  identifier: resinfra
+  orgIdentifier: default
+  projectIdentifier: resapp
+  environmentRef: resenv
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: resk8s
+    namespace: dev
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: false
