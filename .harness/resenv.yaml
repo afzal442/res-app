@@ -1,0 +1,6 @@
+environment:
+  name: resenv
+  identifier: resenv
+  orgIdentifier: default
+  projectIdentifier: resapp
+  type: PreProduction
